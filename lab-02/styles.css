@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  background-color: grey;
+  flex-direction: column;
+  order: 2;
+  /*width: 15vw;*
+  /*float: right;*/
+}
+
+nav a {
+  background-color: pink;
+  color: black;
+  padding: 0.25em 0.5em;
+  margin: 1.5em;
+
+  transition: background-color 1.5s;
+}
+
+nav a:hover {
+  background-color: purple;
+}
+
+header, main, section {
+  overflow: auto;
+}
+
+section {
+  /*width: 85vw;*/
+  box-sizing: border-box;
+  padding: 0.25em 0.25em;
+}
+
+main {
+  display: flex;
+  /*flex-direction: row-reverse;*/
+}
