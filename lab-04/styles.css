@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  flex-direction: column;
+
+  position: static;
+  width: 100vw;
+  /*height: 100vh;*/
+  top: 0;
+  transform: translateX(-100vw);
+  transition: 0.5s
+
+}
+
+#menuToggler {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav.open {
+  transform: translateX(0);
+}
+
+nav a {
+  background: grey;
+  color: pink;
+  padding: 0.5em 0.5em;
+  margin: 0.75em;
+
+  transition: background-color 0.5s;
+}
+
+nav a:hover {
+  background-color: purple;
+}
+
+@media screen and (min-width: 500px) {
+
+  #menuToggler{
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
